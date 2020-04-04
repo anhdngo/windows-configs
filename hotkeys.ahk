@@ -34,4 +34,26 @@
 ; Ctrl+Backspace - Close Current Window
 ^BS::
     ; Send !{F4} ; Does not work with terminal windows
-    WinClose A
+    WinClose, A
+    Return
+
+; Restore window
+CapsLock & j::
+    WinRestore, A
+    Return
+
+; Maximize window
+CapsLock & k::
+    WinMaximize, A
+    Return
+
+; Move window left or right
+CapsLock & h::
+    Send {LWin down}{Left}{LWin up}{Esc}
+    SetCapsLockState, AlwaysOff
+    Return
+
+CapsLock & l::
+    Send {LWin down}{Right}{LWin up}{Esc}
+    SetCapsLockState, AlwaysOff
+    Return

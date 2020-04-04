@@ -21,15 +21,42 @@
 ; === END OF INSTRUCTIONS ===
 ; ===========================
 
-CapsLock & 1::switchDesktopByNumber(1)
-CapsLock & 2::switchDesktopByNumber(2)
-CapsLock & 3::switchDesktopByNumber(3)
-CapsLock & 4::switchDesktopByNumber(4)
-CapsLock & 5::switchDesktopByNumber(5)
-CapsLock & 6::switchDesktopByNumber(6)
-CapsLock & 7::switchDesktopByNumber(7)
-CapsLock & 8::switchDesktopByNumber(8)
-CapsLock & 9::switchDesktopByNumber(9)
+CapsLock & 1::
+	switchDesktopByNumber(1)
+	SetCapsLockState, AlwaysOff
+	return
+CapsLock & 2::
+	switchDesktopByNumber(2)
+	SetCapsLockState, AlwaysOff
+	return
+CapsLock & 3::
+	switchDesktopByNumber(3)
+	SetCapsLockState, AlwaysOff
+	return
+CapsLock & 4::
+	switchDesktopByNumber(4)
+	SetCapsLockState, AlwaysOff
+	return
+CapsLock & 5::
+	switchDesktopByNumber(5)
+	SetCapsLockState, AlwaysOff
+	return
+CapsLock & 6::
+	switchDesktopByNumber(6)
+	SetCapsLockState, AlwaysOff
+	return
+CapsLock & 7::
+	switchDesktopByNumber(7)
+	SetCapsLockState, AlwaysOff
+	return
+CapsLock & 8::
+	switchDesktopByNumber(8)
+	SetCapsLockState, AlwaysOff
+	return
+CapsLock & 9::
+	switchDesktopByNumber(9)
+	SetCapsLockState, AlwaysOff
+	return
 
 CapsLock & Numpad1::switchDesktopByNumber(1)
 CapsLock & Numpad2::switchDesktopByNumber(2)
