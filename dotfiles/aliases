@@ -1,6 +1,25 @@
-# Environment Variables
+# Path Modifications {{{
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+# }}}
+
+# Environment Variables {{{
+export WINHOME=$(echo /mnt/c/Users/$(cmd.exe /c echo %username%) | dos2unix)
+export EDITOR=$(which vim)
+export CONFIG=$WINHOME/windows-configs
+
+export VIMWIKI=$HOME/vimwiki/
+
 export WS=/mnt/c/Users/ango/workspace
-export JDFS=$HOME/pCloudDrive/jdfs
+export JDFS=$WINHOME/pCloudDrive/jdfs
+# }}}
 
 # Ease of Use
 alias sl="ls"
