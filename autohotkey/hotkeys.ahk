@@ -18,9 +18,9 @@
     Run Powershell -noexit -command "cd %HOMEPATH%"
     Return
 
-; Open Ubuntu Subsystem Terminal
+; Open Windows Terminal
 ^!+t::
-    Run Ubuntu
+    Run wt.exe
     Return
 
 ; Open Hyper Terminal
