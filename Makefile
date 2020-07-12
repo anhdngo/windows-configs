@@ -1,5 +1,5 @@
 .PHONY: common
-common: ohmyzsh dotbot pathogen vim-plugins qute-plugins
+common: ohmyzsh dotbot vim-plugins
 
 .PHONY: apt
 apt:

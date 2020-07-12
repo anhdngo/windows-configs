@@ -22,12 +22,11 @@ alias music="mpv --no-audio-display --shuffle --loop-playlist"
 
 # Directory Shortcuts
 alias h="cd ~"
+alias wh="cd $WINHOME"
 alias rt="cd /"
 alias dt="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 alias doc="cd ~/Documents"
-alias gws="cd ~/go/src/github.com"
-alias tuas="cd ~/tuas"
 alias cf=$CONFIG
 alias ws="cd $WS"
 
@@ -153,9 +152,5 @@ alias lws="sljdfunc $WS"
 alias mvws="smvjdfunc $WS"
 alias cpws="scpjdfunc $WS"
 # }}}
-
-# App Shortcuts
-alias vpn="/opt/cisco/anyconnect/bin/vpn connect vpn.ucsd.edu"
-alias vpnd="/opt/cisco/anyconnect/bin/vpn disconnect vpn.ucsd.edu"
 
 # vim:foldmethod=marker:foldlevel=0

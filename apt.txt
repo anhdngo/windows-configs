@@ -4,6 +4,7 @@
 net-tools
 curl
 wget
+dos2unix
 
 # Development
 make

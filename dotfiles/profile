@@ -43,30 +43,11 @@ fi
 # }}}
 
 # Environment Variables {{{
-export CONFIG=$HOME/.linux-configs
+export CONFIG=$WINHOME/windows-configs
 export EDITOR=$(which vim)
-export TERMINAL=$(which terminator)
-
-# if [ -x "$(which qutebrowser)" ]; then
-#     export BROWSER=$(which qutebrowser)
-# else
-#     export BROWSER=/opt/qutebrowser*/qutebrowser.py
-# fi
-
-if [ -x "$(which chromium-browser)" ]; then
-    export BROWSER=$(which chromium-browser)
-elif [ -x "$(which chromium)" ]; then
-    export BROWSER=$(which chromium)
-elif [ -x "$(which firefox)" ]; then
-    export BROWSER=$(which firefox)
-fi
+export WINHOME=$(echo /mnt/c/Users/$(cmd.exe /c echo %username%) | dos2unix)
 
 export VIMWIKI=$HOME/vimwiki/
-export EBOOKS=/usr/bin/calibre
-export GODOT=/opt/Godot*
-export PICTURES=$HOME/assets
-
-export LPASS_AGENT_TIMEOUT=0
 # }}}
 
 # vim:foldmethod=marker:foldlevel=0
