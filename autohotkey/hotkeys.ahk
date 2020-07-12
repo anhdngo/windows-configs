@@ -10,7 +10,7 @@
 
 ; Open cmd
 ^!Enter::
-    Run cmd
+    Run cmd.exe /k cd %HOMEPATH%
     Return
 
 ; Open Powershell Terminal to home directory
