@@ -1,0 +1,22 @@
+# Contains basic apt programs to install
+
+# Utils
+net-tools
+curl
+wget
+
+# Development
+make
+git
+python3
+python3-pip
+
+# Terminal
+zsh
+tmux
+fonts-powerline
+
+# Vim
+gvim
+neovim
+silversearcher-ag
