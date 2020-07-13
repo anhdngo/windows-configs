@@ -109,3 +109,5 @@ fi
 unsetopt prompt_cr prompt_sp
 cd /mnt/c/Users/ango
 export WS="/mnt/c/Users/ango/workspace"
+
+[ -z "$TMUX"  ] && { tmux }
