@@ -8,6 +8,10 @@ SetCapsLockState, AlwaysOff
 ^!b::
     Run, "Brave" --incognito
     Return
+	
+^!+n::	
+    Run, "C:\Program Files\UpNote\UpNote.exe"
+    Return
 
 ; Open Explorer to home directory
 ^!e::
