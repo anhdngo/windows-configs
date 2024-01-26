@@ -9,7 +9,7 @@ SetCapsLockState, AlwaysOff
     Run, "Brave" --incognito
     Return
 	
-^!+n::	
+^!n::	
     Run, "C:\Program Files\UpNote\UpNote.exe"
     Return
 
