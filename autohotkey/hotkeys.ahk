@@ -1,16 +1,12 @@
 SetCapsLockState, AlwaysOff
 
 ; Open Browser of Choice
-^!+b::
+^!b::
     Run "Brave"
     Return
 
-^!b::
+^!+b::
     Run, "Brave" --incognito
-    Return
-	
-^!n::	
-    Run, "C:\Program Files\UpNote\UpNote.exe"
     Return
 
 ; Open Explorer to home directory
@@ -31,11 +27,11 @@ SetCapsLockState, AlwaysOff
     Run Powershell -noexit -command "cd %HOMEPATH%"
     Return
 
+; Map Caps Lock to open Workspace Switcher (Task View)
+CapsLock::#Tab
+
 ; Close Current Window
-^BS::
-    ; Send !{F4} ; Does not work with terminal windows
-    WinClose, A
-    Return
+^!Backspace::WinClose, A
 
 ; Restore window
 CapsLock & j::
